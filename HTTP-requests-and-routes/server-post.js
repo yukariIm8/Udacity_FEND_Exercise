@@ -35,3 +35,21 @@ function sendData (request, response) {
 
 // TODO-ROUTES!
 
+/*
+1) In the file, server.js, create a POST route that uses the url /add and sends the response POST received when used to make a request.
+*/
+app.post('/add', callBack);
+
+function callBack (req, res) {
+    res.send('POST received');
+};
+
+/*
+2) Add a POST route for adding a favorite animal via the path ’/animal’ to an array named data. You will need to create the array as well.
+*/
+data = [];
+add.post('/animal', addAnimal);
+
+function addAnimal (req, res) {
+    data.push(req.body);
+};
