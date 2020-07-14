@@ -21,5 +21,8 @@ const postData = async ( url = '', data = {})=>{
   }
   
   // TODO-Call Function
-  
+  /*
+  1) In the file named app.js, which is located in the website directory of this project, call the function postData with the url /addAnimal and the name of your favorite animal to create a POST request that uses the POST route you setup in server.js.
+  */
+postData('/addAnimal', {animal: 'dog'})
   
