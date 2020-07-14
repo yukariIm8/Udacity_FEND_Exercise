@@ -27,17 +27,3 @@ const server = app.listen(port, listening);
   };
 
 // TODO-ROUTES!
-
-/*
-1) In the file server.js, create a GET route that uses the url /all and returns the JavaScript object named projectData.
-*/
-app.get('/all', function(req, res) {
-  res.send(projectData);
-});
-
-/* Another solution
-app.get('/all', sendData);
-function sendData (request, response) {
-response.send(projectData);
-};
-*/
